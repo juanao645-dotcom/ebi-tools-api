@@ -1,0 +1,29 @@
+- name: defectdojo findings threshold
+  # You may pin to the exact commit or the version.
+  # uses: portswigger-cloud/defectdojo-findings-thresholds@c81f73200d012d1bb3ea6a3027635830100e9805
+  uses: portswigger-cloud/defectdojo-findings-thresholds@v1.0.2
+  with:
+    # the url of your defectdojo instance
+    defectdojo-url: 
+    # the username to login into your defectdojo instance
+    defectdojo-username: 
+    # the password to login into your defectdojo instance
+    defectdojo-password: 
+    # the defectdojo product that the scan result relates to
+    defectdojo-product: 
+    # the file path for a client side certificate if required
+    client-certificate-file-path: # optional
+    # the file path for a client side private key if required
+    client-key-file-path: # optional
+    # total findings threshold
+    total-threshold: # optional, default is false
+    # critical findings threshold
+    critical-threshold: # optional, default is false
+    # high findings threshold
+    high-threshold: # optional, default is false
+    # medium findings threshold
+    medium-threshold: # optional, default is false
+    # low findings threshold
+    low-threshold: # optional, default is false
+    # info findings threshold
+    info-threshold: # optional, default is false
